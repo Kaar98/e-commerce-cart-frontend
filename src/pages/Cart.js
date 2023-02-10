@@ -8,7 +8,7 @@ const Cart = () => {
     if (!cart.items) {
       return;
     }
-    fetch("/api/products/cart-items", {
+    fetch("https://dark-cyan-barnacle-belt.cyclic.app/api/products/cart-items", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

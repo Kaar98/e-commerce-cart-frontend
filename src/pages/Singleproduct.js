@@ -6,7 +6,7 @@ const Singleproduct = () => {
     const history=useNavigate();
     console.log(params);
     useEffect(()=>{
-        fetch(`/api/products/${params._id}`)
+        fetch(`https://dark-cyan-barnacle-belt.cyclic.app/api/products/${params._id}`)
         .then((res)=>{
             return res.json();
         }).then((pro) =>{

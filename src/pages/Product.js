@@ -3,7 +3,7 @@ import Item1 from "./Item1";
 const Product = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("/api/products")
+    fetch("https://dark-cyan-barnacle-belt.cyclic.app/api/products")
       .then((res) => {
         return res.json();
       })
